@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MOMENTUM'25</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+   <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="https://accounts.google.com/gsi/client" async defer></script>
+
+<!-- Swiper JS -->
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- Standard Favicon -->
+<link rel="icon" type="image/png"  href="/img/fav.png">
+
+
+</head>
+
+
+<body>
+    <div class="mobile-landing-logo">
+        <img src="img/V22.png" alt="Logo" />
+      </div>
+      
+      
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img class="Logo" src="img/V22.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#regForm">REGISTER</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="landing">
+  <div class="landing-content">
+    <h1 class="title">MOMENTUM 25</h1>
+    <div class="event-info">
+     <!-- <p>🔥 <strong>Round 2 Deadline:</strong> 25<sup>th</sup> April 2025 &nbsp; | &nbsp; 💸 <strong>Fees:</strong> 1375 EGP</p>-->
+      <p>📍 <strong>Agape Center</strong> </p>
+
+      <a href="#regForm" class="register-btn">Round 3 Coming Soon</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="torn-divider-mobile"></div>
+      
+    <img src="../img/slogan.png" alt="Slogan" class="slogan" />
+    <img src="../img/slogan_mb.png" alt="Slogan Mobile" class="slogan mobile-slogan" />
+
+    <div class="tape-wrapper tape-1">
+        <div class="tape"></div>
+      </div>
+      
+      <div class="tape-wrapper tape-2">
+        <div class="tape"></div>
+      </div>
+      
+      <div class="countdown-section">
+        <h2 class="countdown-title">CONFERENCE STARTS IN</h2>
+        <div class="countdown">
+          <div class="time-box"><span id="days">00</span><small>DAYS</small></div>
+          <div class="time-box"><span id="hours">00</span><small>HRS</small></div>
+          <div class="time-box"><span id="minutes">00</span><small>MIN</small></div>
+          <div class="time-box"><span id="seconds">00</span><small>SEC</small></div>
+        </div>
+      </div>
+      
+      
+     <!-- 🖥️ Desktop Version -->
+
+      
+      
+      
+      
+
+ <section class="video-section">
+        <div class="video-container">
+          <img src="img/SEIF (2).jpg" alt="Video Thumbnail" class="thumbnail" id="videoThumbnail">
+
+            <div class="video-wrapper">
+                <video id="eventVideo" width="100%" height="500px" controls>
+                    <source src="img/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="overlay" id="videoOverlay">
+                <button class="play-btn" id="playButton">START VIDEO</button>
+            </div>
+        </div>
+    </section>
+    
+   
+    <script>
+        
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("eventVideo");
+            const overlay = document.getElementById("videoOverlay");
+            const playButton = document.getElementById("playButton");
+            const thumbnail = document.getElementById("videoThumbnail");
+            // Play video & hide overlay when button is clicked
+            playButton.addEventListener("click", function () {
+                if (video.paused) {
+                    video.play();
+                    overlay.style.display = "none";
+                    thumbnail.style.display="none";
+                }
+            });
+    
+            // Show overlay again when video is paused manually
+            video.addEventListener("pause", function () {
+                overlay.style.display = "flex";
+            });
+    
+            // Show overlay again when video ends
+            video.addEventListener("ended", function () {
+                overlay.style.display = "flex";
+            });
+        });
+    </script>
+<div class="objective-section">
+  <div class="objectives-wrapper">
+    <div class="objective-box">
+      <div class="objective-header">Day 1 Objective</div>
+      <img src="img/y.png" alt="Objective Icon" class="objective-icon" />
+    </div>
+    <div class="objective-box">
+      <div class="objective-header">Day 2 Objective</div>
+      <img src="img/O.png" alt="Objective Icon" class="objective-icon" />
+    </div>
+    <div class="objective-box">
+      <div class="objective-header">Day 3 Objective</div>
+      <img src="img/U.png" alt="Objective Icon" class="objective-icon" />
+    </div>
+  </div>
+
+</div>
+
+    
+    
+    
+  <div class="scroll-container">
+        <div class="scroll-content" id="scrollText">
+            Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon • Round 3 Coming Soon •
+        </div>
+    </div>
+
+        
+    <!--<section class="registration">
+      <form class="form" id="regForm" enctype="multipart/form-data">
+        <div class="form-steps-container">
+          <div class="form-step active">
+            <h2 style="color: white; font-weight: bold;">Step 1: Personal Info</h2>
+            <div class="form-grid">
+              <input type="text" name="full_name" placeholder="Full Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="tel" name="phone_number" placeholder="Phone Number" required />
+    
+              <select name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer-not">Prefer not to say</option>
+              </select>
+    
+              <select name="role" required>
+                <option value="" selected disabled>Role</option>
+                <option value="LCP">LCP</option>
+                <option value="LCVP">LCVP</option>
+                <option value="Director">Director</option>
+                <option value="Team Leader">Team Leader</option>
+                <option value="Coordinator">Coordinator</option>
+                <option value="Team Member">Team Member</option>
+              </select>
+    
+              <select name="function" required>
+                <option value="" selected disabled>Function</option>
+                <option value="oGV">oGV</option>
+                <option value="iGV">iGV</option>
+                <option value="oGT">oGT</option>
+                <option value="iGT">iGT</option>
+                <option value="B2C">B2C</option>
+                <option value="B2B">B2B</option>
+                <option value="MXP">MXP</option>
+                <option value="F&L">F&L</option>
+                <option value="LCP">LCP</option>
+              </select>
+    
+              <select name="lc" required>
+                <option value="" selected disabled>LC</option>
+                <option value="6th October University">6th October University</option>
+                <option value="AAST Alexandria">AAST Alexandria</option>
+                <option value="AAST In CAIRO">AAST In CAIRO</option>
+                <option value="Ain Shams University">Ain Shams University</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="AUC">AUC</option>
+                <option value="Beni Suef">Beni Suef</option>
+                <option value="Cairo University">Cairo University</option>
+                <option value="Galala">Galala</option>
+                <option value="GUC">GUC</option>
+                <option value="Helwan">Helwan</option>
+                <option value="Mansoura">Mansoura</option>
+                <option value="Menofia">Menofia</option>
+                <option value="MIU">MIU</option>
+                <option value="MSA">MSA</option>
+                <option value="MUST">MUST</option>
+                <option value="New Capital">New Capital</option>
+                <option value="Suez">Suez</option>
+                <option value="Tanta">Tanta</option>
+                <option value="Zagazig">Zagazig</option>
+              </select>
+    
+              <input type="password" name="lc_password" placeholder="LC Password" required />
+            </div>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+    
+          <div class="form-step">
+            <h2 style="color: white; font-weight: bold;">Step 2: Documents & Health</h2>
+            <div class="form-grid">
+              <label class="file-upload">
+                <span class="file-label">Upload</span>
+                <span class="file-name">National ID/Passport (Front)</span>
+                <input type="file" name="id_front" accept=".pdf" required hidden />
+              </label>
+    
+              <label class="file-upload">
+                <span class="file-label">Upload</span>
+                <span class="file-name">National ID/Passport (Back)</span>
+                <input type="file" name="id_back" accept=".pdf" required hidden />
+              </label>
+    
+              <label class="file-upload">
+                <span class="file-label">Upload</span>
+                <span class="file-name">
+                  Indemnity Form (<a href="https://docs.google.com/document/d/1pJRuMreyrhKVAS61o91PhcmCn-ebCiDMgWnSRgM6PeQ/edit?usp=sharing" target="_blank">Template</a>)
+                </span>
+                <input type="file" name="indemnity_form" accept=".pdf" required hidden />
+              </label>
+    
+              <select name="allergies" required>
+                <option value="" disabled selected>Do you have any allergies?</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+    
+              <input type="text" name="allergy_details" placeholder="If yes or you are vegan or vegetarian, Please mention it" />
+            </div>
+            <div class="button-row">
+              <button type="button" class="prev-btn">Back</button>
+              <button type="button" class="next-btn">Next</button>
+            </div>
+          </div>
+    
+          <div class="form-step">
+            <h2 style="color: white; font-weight: bold;">Step 3: Merchandise</h2>
+            <div class="form-row" style="margin-bottom: 20px;">
+              <select id="packageSelector" name="package" onchange="applyPackageSelection()" required>
+                <option value="" selected disabled>-- Select a Package for Merchandise --</option>
+                <option value="None">No Package (Manual)</option>
+                <option value="Package1">Package 1 (Sticker - Tote Bag - T Shirt - Sweatpant - Wristband) - 530 EGP</option>
+                <option value="Package2">Package 2 (Sticker - Tote Bag - Wristband) - 155 EGP</option>
+                <option value="Package3">Package 3 (T Shirt - Sweatpant - Wristband) - 490 EGP</option>
+                <option value="Package4">Package 4 (T Shirt - Wristband) - 280 EGP</option>
+                <option value="Package5">Package 5 (Tote Bag - Sweatpant - Sticker) - 300 EGP</option>
+                <option value="Package6">Package 6 (T Shirt - Sweatpant - Sticker) - 400 EGP</option>
+                
+
+              </select>
+            </div>
+            
+            <div class="store-grid">
+              <div class="item-card">
+                
+                <img src="img/momentum25 tshirt.webp" alt="T-Shirt" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">T-Shirt</h3>
+                  <span class="item-price">220 EGP</span>
+
+                </div>          
+                <span class="policy-link" onclick="openPolicyPopup1()">Size Chart</span>
+
+
+                <div class="form-row">
+                  <div class="half-field">
+                    <label>Size</label>
+                    <select name="tshirt_size" required>
+                      <option value="" selected disabled>Select Size</option>
+                      <option value="None">None</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="2XL">2XL</option>
+                    </select>
+                  </div>
+                
+                  <div class="half-field">
+                    <label>Quantity</label>
+                    <input type="number" name="tshirt_quantity" min="0" value="0" />
+                  </div>
+                </div>
+                
+
+              </div>
+              <div class="item-card">
+                <img src="img/momentum wristband.png" alt="Wristband1" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">Wristband - Black</h3>
+                  <span class="item-price">90 EGP</span>
+
+                </div>                
+
+                <label>Quantity</label>
+                <input type="number" name="wristband1_quantity" min="0" value="0" />
+
+              </div>
+
+            </div>              
+            <div class="store-grid">
+              <div class="item-card">
+                <img src="img/momentum wristband1.png" alt="Wristband1" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">Wristband - Fire</h3>
+                  <span class="item-price">90 EGP</span>
+
+                </div>                
+                <label>Quantity</label>
+                <input type="number" name="wristband2_quantity" min="0" value="0" />
+              </div>
+              <div class="item-card">
+                <img src="img/pants.webp" alt="pants" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">Sweatpants</h3>
+                  <span class="item-price">250 EGP</span>
+  
+                </div>                
+  
+                <div class="form-row">
+                  <div class="half-field">
+                    <label>Size</label>
+                    <select name="sweatpants_size" required>
+                      <option value="" selected disabled>Select Size</option>
+                      <option value="None">None</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </div>
+                
+                  <div class="half-field">
+                    <label>Quantity</label>
+                    <input type="number" name="sweatpants_quantity" min="0" value="0" />
+                  </div>
+                </div>
+  
+              </div>
+              
+
+            </div>          
+            <div class="store-grid">
+              <div class="item-card">
+                <img src="img/totebag.webp" alt="totebag" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">Tote Bag</h3>
+                  <span class="item-price">75 EGP</span>
+
+                </div>                
+
+                <label>Quantity</label>
+                <input type="number" name="totebag_quantity" min="0" value="0" />
+  
+              </div>
+              <div class="item-card">
+                <img src="img/stickers.webp" alt="stickers" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">Stickers Pack (4 Stickers)</h3>
+                  <span class="item-price">20 EGP</span>
+
+                </div>                
+
+                <label>Quantity</label>
+                <input type="number" name="stickers_quantity" min="0" value="0" />
+
+              </div>
+
+            </div> 
+            <div class="store-grid">
+             
+              <div class="item-card">
+                <img src="img/bucket.webp" alt="bucket" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">Bucket Hat</h3>
+                  <span class="item-price">90 EGP</span>
+
+                </div>                
+
+                <label>Quantity</label>
+                <input type="number" name="bucket_quantity" min="0" value="0" />
+
+              </div>
+              <div class="item-card">
+                <img src="img/socks.webp" alt="socks" onclick="openPopup(this.src)" />
+                <div class="title-price-container">
+                  <h3 class="item-title">Socks</h3>
+                  <span class="item-price">70 EGP</span>
+
+                </div>                
+
+                <label>Quantity</label>
+                <input type="number" name="socks_quantity" min="0" value="0" />
+
+              </div>
+            </div> 
+
+            <div class="button-row">
+              <button type="button" class="prev-btn">Back</button>
+              <button type="button" class="next-btn">Next</button>
+            </div>
+          </div>
+          <div class="form-step">
+            <h2 style="color: white; font-weight: bold;">Step 4: Transportation</h2>
+            <div class="form-row full-width">
+    
+              <select name="transportation" required>
+                <option value="" disabled selected>Do you want transportation from Cairo? (350 EGP)</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+
+    
+            </div>
+    
+            <div class="form-row full-width">
+              <label class="checkbox-label">
+                <input type="checkbox" name="agree_policy" id="agreePolicy" required />
+                <span>
+                  I have read and agree to the
+                  <span class="policy-link" onclick="openPolicyPopup()">Payment & Refund Policy</span>
+                </span>
+              </label>
+            </div>
+    
+            <div class="button-row">
+              <button type="button" class="prev-btn">Back</button>
+              <button type="button" class="submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section> -->
+    
+    
+      
+    <section class="team-modern desktop-only">
+      <h2 class="section-title">Meet Your Conference Team</h2>
+    
+      <div class="person-modern">
+        <div class="photo-wrapper">
+          <img src="img/sasa.png" />
+        </div>
+        <h4>Mustafa Abualewa</h4>
+        <p>Conference Manager</p>
+      </div>
+    
+      <div class="person-modern">
+        <div class="photo-wrapper">
+          <img src="img/yoyo.png" />
+        </div>
+        <h4>Youssef Khaled</h4>
+        <p>Conference Coach</p>
+      </div>
+    
+      <div class="person-modern">
+        <div class="photo-wrapper">
+          <img src="img/nassar.png" />
+        </div>
+        <h4>Ibraheem Nassar</h4>
+        <p>Conference Manager</p>
+      </div>
+      <div class="person-modern">
+        <div class="photo-wrapper">
+          <img src="img/Mondy.png" />
+        </div>
+        <h4>Mondy</h4>
+        <p>Agenda Manager</p>
+      </div>
+    
+      <div class="person-modern">
+        <div class="photo-wrapper">
+          <img src="img/mahmoud.png" />
+        </div>
+        <h4>Mahmoud Abo Al-Fath</h4>
+        <p>Agenda Coach</p>
+      </div>
+    
+      <div class="person-modern">
+        <div class="photo-wrapper">
+          <img src="img/shurbl.png" />
+        </div>
+        <h4>Hossam Shurbl</h4>
+        <p>Agenda Manager</p>
+      </div>
+    </section>
+    
+    <!-- 📱 Mobile Swiper Version -->
+    <section class="team-swiper-mobile mobile-only">
+      <h2 class="section-title">Meet Your Conference Team</h2>
+      <div class="swiper team-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="person-modern">
+              <div class="photo-wrapper">
+                <img src="img/sasa.png" />
+              </div>
+              <h4>Mustafa Abualewa</h4>
+              <p>Conference Manager</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="person-modern">
+              <div class="photo-wrapper">
+                <img src="img/yoyo.png" />
+              </div>
+              <h4>Youssef Khaled</h4>
+              <p>Conference Coach</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="person-modern">
+              <div class="photo-wrapper">
+                <img src="img/nassar.png" />
+              </div>
+              <h4>Ibraheem Nassar</h4>
+              <p>Conference Manager</p>
+            </div>
+          </div>
+        
+          <div class="swiper-slide">
+            <div class="person-modern">
+              <div class="photo-wrapper">
+                <img src="img/Mondy.png" />
+              </div>
+              <h4>Mondy</h4>
+              <p>Agenda Manager</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="person-modern">
+              <div class="photo-wrapper">
+                <img src="img/mahmoud.png" />
+              </div>
+              <h4>Mahmoud Abo Al-Fath</h4>
+              <p>Agenda Coach</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="person-modern">
+              <div class="photo-wrapper">
+                <img src="img/shurbl.png" />
+              </div>
+              <h4>Hossam Shurbl</h4>
+              <p>Agenda Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+<!-- Partner With Us Section 
+<section class="partner-with-us">
+    <div class="partner-content">
+        <h2>Want to Partner With Us?</h2>
+        <p>Join us in making a difference! Partner with us to gain visibility, expand your network, and create meaningful impact.</p>
+       <a href="https://aiesec.org.eg/partner.html" target="_blank">
+        <button  class="partner-btn">Become a Partner</button>
+       </a> 
+    
+    </div>
+</section> -->
+
+
+
+
+
+<!-- Footer Section -->
+
+
+<!-- Copyright Footer Bar -->
+<footer class="image-footer">
+  <div class="oc-hell-title">
+    <h2>Meet THE BLINDERS</h2>
+  </div>
+
+  <div class="scrolling-container">
+    <div class="scrolling-content">
+      <!-- Image Track #1 -->
+      <div class="image-track">
+        <img src="img/oc/image_1.webp" alt="Image 1" loading="lazy" />
+        <img src="img/oc/image_2.webp" alt="Image 2" loading="lazy" />
+        <img src="img/oc/image_3.webp" alt="Image 3" loading="lazy" />
+        <img src="img/oc/image_4.webp" alt="Image 4" loading="lazy" />
+        <img src="img/oc/image_5.webp" alt="Image 5" loading="lazy" />
+        <img src="img/oc/image_6.webp" alt="Image 6" loading="lazy" />
+        <img src="img/oc/image_7.webp" alt="Image 7" loading="lazy" />
+        <img src="img/oc/image_8.webp" alt="Image 8" loading="lazy" />
+        <img src="img/oc/image_9.webp" alt="Image 9" loading="lazy" />
+        <img src="img/oc/image_10.webp" alt="Image 10" loading="lazy" />
+        <img src="img/oc/image_11.webp" alt="Image 11" loading="lazy" />
+        <img src="img/oc/image_12.webp" alt="Image 12" loading="lazy" />
+        <img src="img/oc/image_13.webp" alt="Image 13" loading="lazy" />
+        <img src="img/oc/image_14.webp" alt="Image 14" loading="lazy" />
+        <img src="img/oc/image_15.webp" alt="Image 15" loading="lazy" />
+        <img src="img/oc/image_16.webp" alt="Image 16" loading="lazy" />
+        <img src="img/oc/image_17.webp" alt="Image 17" loading="lazy" />
+        <img src="img/oc/image_18.webp" alt="Image 18" loading="lazy" />
+        <img src="img/oc/image_19.webp" alt="Image 19" loading="lazy" />
+        <img src="img/oc/image_20.webp" alt="Image 20" loading="lazy" />
+        <img src="img/oc/image_21.webp" alt="Image 21" loading="lazy" />
+        <img src="img/oc/image_22.webp" alt="Image 22" loading="lazy" />
+        <img src="img/oc/image_23.webp" alt="Image 23" loading="lazy" />
+        <img src="img/oc/image_24.webp" alt="Image 24" loading="lazy" />
+        <img src="img/oc/image_25.webp" alt="Image 25" loading="lazy" />
+        <img src="img/oc/image_26.webp" alt="Image 26" loading="lazy" />
+        <img src="img/oc/image_27.webp" alt="Image 27" loading="lazy" />
+        <img src="img/oc/image_28.webp" alt="Image 28" loading="lazy" />
+        <img src="img/oc/image_29.webp" alt="Image 29" loading="lazy" />
+        <img src="img/oc/image_30.webp" alt="Image 30" loading="lazy" />
+        <img src="img/oc/image_31.webp" alt="Image 31" loading="lazy" />
+        <img src="img/oc/image_32.webp" alt="Image 32" loading="lazy" />
+        <img src="img/oc/image_33.webp" alt="Image 33" loading="lazy" />
+        <img src="img/oc/image_34.webp" alt="Image 34" loading="lazy" />
+        <img src="img/oc/image_35.webp" alt="Image 35" loading="lazy" />
+        <img src="img/oc/image_36.webp" alt="Image 36" loading="lazy" />
+        <img src="img/oc/image_37.webp" alt="Image 37" loading="lazy" />
+        <img src="img/oc/image_38.webp" alt="Image 38" loading="lazy" />
+        <img src="img/oc/image_39.webp" alt="Image 39" loading="lazy" />
+      </div>
+  
+      <!-- Image Track #2 (Duplicate for infinite loop) -->
+      <div class="image-track">
+        <img src="img/oc/image_1.webp" alt="Image 1" loading="lazy" />
+        <img src="img/oc/image_2.webp" alt="Image 2" loading="lazy" />
+        <img src="img/oc/image_3.webp" alt="Image 3" loading="lazy" />
+        <img src="img/oc/image_4.webp" alt="Image 4" loading="lazy" />
+        <img src="img/oc/image_5.webp" alt="Image 5" loading="lazy" />
+        <img src="img/oc/image_6.webp" alt="Image 6" loading="lazy" />
+        <img src="img/oc/image_7.webp" alt="Image 7" loading="lazy" />
+        <img src="img/oc/image_8.webp" alt="Image 8" loading="lazy" />
+        <img src="img/oc/image_9.webp" alt="Image 9" loading="lazy" />
+        <img src="img/oc/image_10.webp" alt="Image 10" loading="lazy" />
+        <img src="img/oc/image_11.webp" alt="Image 11" loading="lazy" />
+        <img src="img/oc/image_12.webp" alt="Image 12" loading="lazy" />
+        <img src="img/oc/image_13.webp" alt="Image 13" loading="lazy" />
+        <img src="img/oc/image_14.webp" alt="Image 14" loading="lazy" />
+        <img src="img/oc/image_15.webp" alt="Image 15" loading="lazy" />
+        <img src="img/oc/image_16.webp" alt="Image 16" loading="lazy" />
+        <img src="img/oc/image_17.webp" alt="Image 17" loading="lazy" />
+        <img src="img/oc/image_18.webp" alt="Image 18" loading="lazy" />
+        <img src="img/oc/image_19.webp" alt="Image 19" loading="lazy" />
+        <img src="img/oc/image_20.webp" alt="Image 20" loading="lazy" />
+        <img src="img/oc/image_21.webp" alt="Image 21" loading="lazy" />
+        <img src="img/oc/image_22.webp" alt="Image 22" loading="lazy" />
+        <img src="img/oc/image_23.webp" alt="Image 23" loading="lazy" />
+        <img src="img/oc/image_24.webp" alt="Image 24" loading="lazy" />
+        <img src="img/oc/image_25.webp" alt="Image 25" loading="lazy" />
+        <img src="img/oc/image_26.webp" alt="Image 26" loading="lazy" />
+        <img src="img/oc/image_27.webp" alt="Image 27" loading="lazy" />
+        <img src="img/oc/image_28.webp" alt="Image 28" loading="lazy" />
+        <img src="img/oc/image_29.webp" alt="Image 29" loading="lazy" />
+        <img src="img/oc/image_30.webp" alt="Image 30" loading="lazy" />
+        <img src="img/oc/image_31.webp" alt="Image 31" loading="lazy" />
+        <img src="img/oc/image_32.webp" alt="Image 32" loading="lazy" />
+        <img src="img/oc/image_33.webp" alt="Image 33" loading="lazy" />
+        <img src="img/oc/image_34.webp" alt="Image 34" loading="lazy" />
+        <img src="img/oc/image_35.webp" alt="Image 35" loading="lazy" />
+        <img src="img/oc/image_36.webp" alt="Image 36" loading="lazy" />
+        <img src="img/oc/image_37.webp" alt="Image 37" loading="lazy" />
+        <img src="img/oc/image_38.webp" alt="Image 38" loading="lazy" />
+        <img src="img/oc/image_39.webp" alt="Image 39" loading="lazy" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-copyright">
+    <h7>Copyright © 2025 All rights reserved. Made with 🤍 by <a href="https://www.linkedin.com/in/ibraheem-a-nassar/" target="_blank" style="color: wheat; font-weight: bold; ">Ibraheem Nassar</a></h7>
+   
+</div>
+
+</footer>
+
+    
+    
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    new Swiper(".team-swiper", {
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      centeredSlides: true,
+      spaceBetween: 20,
+      grabCursor: true,
+    });
+  });
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("regForm");
+    const steps = form.querySelectorAll(".form-step");
+    const nextBtns = form.querySelectorAll(".next-btn");
+    const prevBtns = form.querySelectorAll(".prev-btn");
+    const submitBtn = form.querySelector(".submit-btn");
+
+    const lcPasswords = {
+      "6th October University": "6OCT#2",
+      "AAST Alexandria": "AASTA#3",
+      "AAST In CAIRO": "AASTC#4",
+      "Ain Shams University": "AINSHAMS#5",
+      "Alexandria": "ALEX#6",
+      "AUC": "AUC#7",
+      "Beni Suef": "BENISUEF#8",
+      "Cairo University": "CU#9",
+      "Galala": "GALALA#10",
+      "GUC": "GUC#11",
+      "Helwan": "HELWAN#1",
+      "Mansoura": "MANSOURA#12",
+      "Menofia": "MENOFIA#13",
+      "MIU": "MIU#14",
+      "MSA": "MSA#15",
+      "MUST": "MUST#16",
+      "Suez": "SUEZ#17",
+      "Tanta": "TANTA#18",
+      "Zagazig": "ZAGAZIG#19",
+      "New Capital": "NEWCAPITAL#20"
+    };
+
+    let currentStep = 0;
+    let isSubmitting = false;
+
+    // Show LC password error message
+    const lcPasswordField = form.querySelector('input[name="lc_password"]');
+    const lcField = form.querySelector('select[name="lc"]');
+
+    const errorLabel = document.createElement("small");
+    errorLabel.style.color = "red";
+    errorLabel.style.display = "none";
+    errorLabel.textContent = "Incorrect LC password, Contact your COD";
+    lcPasswordField.insertAdjacentElement("afterend", errorLabel);
+
+    nextBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (validateStep(currentStep)) {
+          steps[currentStep].classList.remove("active");
+          currentStep++;
+          steps[currentStep].classList.add("active");
+        }
+      });
+    });
+
+    prevBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        steps[currentStep].classList.remove("active");
+        currentStep--;
+        steps[currentStep].classList.add("active");
+      });
+    });
+
+    function validateStep(stepIndex) {
+      const fields = steps[stepIndex].querySelectorAll("input, select");
+
+      for (let field of fields) {
+        if (!field.checkValidity()) {
+          field.reportValidity();
+          return false;
+        }
+      }
+
+      // Custom validation for LC password
+      const selectedLC = lcField.value;
+      const enteredPassword = lcPasswordField.value;
+
+      if (stepIndex === 0 && selectedLC && lcPasswords[selectedLC]) {
+        if (lcPasswords[selectedLC] !== enteredPassword) {
+          errorLabel.style.display = "block";
+          return false;
+        } else {
+          errorLabel.style.display = "none";
+        }
+      }
+
+      return true;
+    }
+
+    submitBtn.addEventListener("click", async function (e) {
+      e.preventDefault();
+      if (isSubmitting) return;
+      if (!validateStep(currentStep)) return;
+
+      isSubmitting = true;
+      submitBtn.textContent = "Processing...";
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+      formData.delete("agree_policy");
+      formData.append("agree_policy", document.getElementById("agreePolicy").checked ? "true" : "false");
+      for (let pair of formData.entries()) {
+       console.log(`${pair[0]}:`, pair[1]);
+      }
+      const endpoint = "https://mcegyptconferences.aiesec.org.eg/api/delegates/create/";
+
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          body: formData,
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          window.location.href = "thankyou.html";
+        } else {
+          const errorData = await response.json();
+          console.error("❌ Error:", errorData);
+          alert("Submission failed. Please check your data.");
+        }
+
+      } catch (err) {
+        console.error("❌ Network error:", err);
+        alert("Network error. Please try again.");
+      }
+
+      submitBtn.textContent = "Submit";
+      submitBtn.disabled = false;
+      isSubmitting = false;
+    });
+  });
+</script>
+
+  
+
+
+
+        
+<div id="preloader">
+  <svg width="150" height="150" viewBox="0 0 150 150">
+    <!-- Outer circle -->
+    <circle cx="75" cy="75" r="60" stroke="white" stroke-width="4" fill="none" />
+    
+    <!-- Crosshairs -->
+    <line x1="75" y1="15" x2="75" y2="135" stroke="white" stroke-width="2"/>
+    <line x1="15" y1="75" x2="135" y2="75" stroke="white" stroke-width="2"/>
+    
+    <!-- Rotating part -->
+    <g id="rotating-scope">
+      <circle cx="75" cy="75" r="50" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none" />
+      <line x1="75" y1="25" x2="75" y2="45" stroke="white" stroke-width="2"/>
+    </g>
+    
+    <!-- Blinking red dot -->
+    <circle cx="75" cy="75" r="6" fill="red">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" />
+    </circle>
+  </svg>
+  <p class="preloader-text">Locking Target...</p>
+</div>
+
+<style>
+  #preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../img/pattern.jpg'), linear-gradient(to left, #000000, #001b11);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+  }
+
+  #rotating-scope {
+    transform-origin: center;
+    animation: rotateScope 2s linear infinite;
+  }
+
+  .preloader-text {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  @keyframes rotateScope {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const preloader = document.getElementById("preloader");
+
+    const preloadImages = () => {
+      const imageUrls = Array.from({ length: 30 }, (_, i) => `img/oc/image_${i + 1}.webp`);
+      return Promise.all(
+        imageUrls.map((src) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = img.onerror = resolve;
+            img.src = src;
+          });
+        })
+      );
+    };
+
+    preloadImages().then(() => {
+      if (preloader) preloader.style.display = "none";
+    });
+
+    setTimeout(() => {
+      if (preloader) preloader.style.display = "none";
+    }, 5000); // Fallback in case of slow connection
+  });
+</script>
+
+
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.smartmenus.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/animateScroll-2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <div class="image-popup" id="imagePopup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img id="popupImg" src="" alt="Full View" />
+      </div>
+      <div class="modal-overlay" id="policyModal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closePolicyPopup()">&times;</span>
+          <h3>Payment & Refund Policy</h3>
+<p><strong>Second Round Fees:</strong> 1375 EGP</p>
+
+<p><strong>Payment DDL:</strong> 28th of April</p>
+
+
+<ul class="refund-list">
+  <li><strong>Full Refund:</strong> from <span>19/4/2025</span> to <span>25/4/2025</span></li>
+  <li><strong>50% Refund:</strong> from <span>26/4/2025</span> to <span>30/4/2025</span></li>
+  <li><strong>25% Refund:</strong> from <span>1/5/2025</span> to <span>5/5/2025</span></li>
+  <li><strong>0% Refund:</strong> starting from <span>6/5/2025</span></li>
+</ul>
+
+
+        </div>
+      </div>
+      <div class="modal-overlay" id="policyModal1">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closePolicyPopup1()">&times;</span>
+          <h3>Size Chart</h3>
+
+<ul class="refund-list">
+  <li><strong>M: </strong> Height <span>68</span> Width <span>48</span></li>
+  <li><strong>L: </strong> Height <span>72</span> Width <span>52</span></li>
+  <li><strong>XL: </strong> Height <span>74</span> Width <span>54</span></li>
+  <li><strong>2XL: </strong> Height <span>75</span> Width <span>56</span></li>
+</ul>
+
+        </div>
+      </div>
+      <div id="imagePopup" style="display: none; position: fixed; top: 0; left: 0;
+  width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.8);
+  justify-content: center; align-items: center; z-index: 9999;">
+  <img id="popupImg" src="" style="max-width: 90%; max-height: 90%; border-radius: 10px;" />
+</div>
+
+
+<script>
+  function applyPackageSelection() {
+    const selectedPackage = document.getElementById("packageSelector").value;
+  
+    const setField = (name, value, readOnly) => {
+      const field = document.querySelector(`[name="${name}"]`);
+      if (field) {
+        if (value !== null) field.value = value;
+        field.readOnly = readOnly;
+      }
+    };
+  
+    const setSelect = (name, value) => {
+      const select = document.querySelector(`[name="${name}"]`);
+      if (select) {
+        if (value !== null) select.value = value;
+      }
+    };
+  
+    if (selectedPackage === "Package1") {
+      setField("stickers_quantity", 1, true);
+      setField("totebag_quantity", 1, true);
+      setField("wristband1_quantity", 1, true);
+      setField("tshirt_quantity", 1, true);
+      setField("sweatpants_quantity", 1, true);
+      setField("wristband2_quantity", 0, false);
+      setField("bucket_quantity", 0, false);
+      setField("socks_quantity", 0, false);
+  
+      setSelect("tshirt_size", null);
+      setSelect("sweatpants_size", null);
+    } 
+    else if (selectedPackage === "Package2") {
+      setField("stickers_quantity", 1, true);
+      setField("totebag_quantity", 1, true);
+      setField("wristband1_quantity", 1, true);
+      setField("tshirt_quantity", 0, false);
+      setField("sweatpants_quantity", 0, false);
+      setField("wristband2_quantity", 0, false);
+      setField("bucket_quantity", 0, false);
+      setField("socks_quantity", 0, false);
+  
+      setSelect("tshirt_size", "None");
+      setSelect("sweatpants_size", "None");
+    }
+    else if (selectedPackage === "Package3") {
+      setField("stickers_quantity", 0, false);
+      setField("totebag_quantity", 0, false);
+      setField("wristband1_quantity", 1, true);
+      setField("tshirt_quantity", 1, true);
+      setField("sweatpants_quantity", 1, true);
+      setField("wristband2_quantity", 0, false);
+      setField("bucket_quantity", 0, false);
+      setField("socks_quantity", 0, false);
+  
+      setSelect("tshirt_size", null);
+      setSelect("sweatpants_size", null);
+    }
+    else if (selectedPackage === "Package4") {
+      setField("stickers_quantity", 0, false);
+      setField("totebag_quantity", 0, false);
+      setField("wristband1_quantity", 1, true);
+      setField("tshirt_quantity", 1, true);
+      setField("sweatpants_quantity", 0, false);
+      setField("wristband2_quantity", 0, false);
+      setField("bucket_quantity", 0, false);
+      setField("socks_quantity", 0, false);
+  
+      setSelect("tshirt_size", null);
+      setSelect("sweatpants_size", "None");
+    }
+    else if (selectedPackage === "Package5") {
+      setField("stickers_quantity", 1, false);
+      setField("totebag_quantity", 1, false);
+      setField("wristband1_quantity", 0, false);
+      setField("tshirt_quantity", 0, true);
+      setField("sweatpants_quantity", 1, true);
+      setField("wristband2_quantity", 0, false);
+      setField("bucket_quantity", 0, false);
+      setField("socks_quantity", 0, false);
+  
+      setSelect("tshirt_size", null);
+      setSelect("sweatpants_size", null);
+    }
+    else if (selectedPackage === "Package6") {
+      setField("stickers_quantity", 1, true);
+      setField("totebag_quantity", 0, true);
+      setField("wristband1_quantity", 0, false);
+      setField("tshirt_quantity", 1, false);
+      setField("sweatpants_quantity", 1, true);
+      setField("wristband2_quantity", 0, false);
+      setField("bucket_quantity", 0, false);
+      setField("socks_quantity", 0, false);
+  
+      setSelect("tshirt_size", "None");
+      setSelect("sweatpants_size", null);
+    }
+    else {
+      // Reset all fields manually
+      const fields = [
+        "stickers_quantity", "totebag_quantity", "wristband1_quantity", "wristband2_quantity",
+        "tshirt_quantity", "sweatpants_quantity", "bucket_quantity", "socks_quantity"
+      ];
+      fields.forEach(name => {
+        setField(name, 0, false);
+      });
+  
+      setSelect("tshirt_size", "");
+      setSelect("sweatpants_size", "");
+    }
+  }
+  </script>
+  
+  
+  
+
+</body>
+</html>
